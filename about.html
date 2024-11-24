@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Johnson & Associates Legal Services. Our experienced team of attorneys is dedicated to providing exceptional legal representation.">
+    <title>About Us - Johnson & Associates Legal Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .about-page {
+            padding: 120px 0 60px;
+        }
+        
+        .about-section {
+            margin-bottom: 4rem;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        
+        .about-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-content h2 {
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+            margin-bottom: 1rem;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .value-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .value-card h3 {
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+            margin-bottom: 1rem;
+        }
+        
+        .team-section {
+            background-color: var(--secondary-color);
+            padding: 4rem 0;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-member-image {
+            height: 300px;
+            overflow: hidden;
+        }
+        
+        .team-member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .team-member-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .team-member-info h3 {
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-member-info p {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Johnson & Associates</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="practice-areas.html">Practice Areas</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-page">
+            <div class="container">
+                <div class="about-section">
+                    <div class="about-grid">
+                        <div class="about-content">
+                            <h2>Our Story</h2>
+                            <p>Founded in 1995, Johnson & Associates has established itself as one of New York's most respected law firms. For over 25 years, we have been providing exceptional legal services to individuals and businesses throughout the region.</p>
+                            <p>Our commitment to excellence, integrity, and client satisfaction has earned us a reputation for delivering outstanding results. We combine extensive legal expertise with a personal approach, ensuring that each client receives the attention and representation they deserve.</p>
+                        </div>
+                        <div class="about-image">
+                            <img src="images/office.jpg" alt="Johnson & Associates Office" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>Our Values</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i class="fas fa-balance-scale"></i>
+                            <h3>Integrity</h3>
+                            <p>We maintain the highest ethical standards in all our dealings, ensuring transparency and honesty in every interaction.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Excellence</h3>
+                            <p>We strive for excellence in everything we do, delivering superior legal services and exceptional results.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-users"></i>
+                            <h3>Client-Focused</h3>
+                            <p>Our clients' needs and objectives are our top priority. We work tirelessly to achieve the best possible outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <div class="container">
+                    <h2>Our Team</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="team-member-image">
+                                <img src="images/lawyer1.jpg" alt="Sarah Johnson" loading="lazy">
+                            </div>
+                            <div class="team-member-info">
+                                <h3>Sarah Johnson</h3>
+                                <p>Founding Partner</p>
+                                <p>Specializing in Corporate Law and Business Litigation with over 25 years of experience.</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-member-image">
+                                <img src="images/lawyer2.jpg" alt="Michael Thompson" loading="lazy">
+                            </div>
+                            <div class="team-member-info">
+                                <h3>Michael Thompson</h3>
+                                <p>Senior Partner</p>
+                                <p>Expert in Family Law and Estate Planning with a track record of successful cases.</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="team-member-image">
+                                <img src="images/lawyer3.jpg" alt="Emily Rodriguez" loading="lazy">
+                            </div>
+                            <div class="team-member-info">
+                                <h3>Emily Rodriguez</h3>
+                                <p>Partner</p>
+                                <p>Specializing in Criminal Defense and Civil Rights with a passion for justice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>123 Legal Street</p>
+                    <p>New York, NY 10001</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@johnsonlegal.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="practice-areas.html">Practice Areas</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Johnson & Associates Legal Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

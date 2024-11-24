@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive legal services at Johnson & Associates. Expert representation in family law, corporate law, criminal defense, and more.">
+    <title>Practice Areas - Johnson & Associates Legal Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .practice-areas-page {
+            padding: 120px 0 60px;
+        }
+        
+        .practice-area {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .practice-area:hover {
+            transform: translateY(-5px);
+        }
+        
+        .practice-area-content {
+            padding: 2rem;
+        }
+        
+        .practice-area h2 {
+            color: var(--primary-color);
+            font-family: var(--font-heading);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .practice-area h2 i {
+            color: var(--accent-color);
+        }
+        
+        .practice-area-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+        
+        .practice-area-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .practice-area-list li:before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        .cta-box {
+            background: var(--primary-color);
+            color: var(--light-text);
+            padding: 3rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .cta-box h2 {
+            font-family: var(--font-heading);
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .practice-area-content {
+                padding: 1.5rem;
+            }
+            
+            .cta-box {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">Johnson & Associates</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="practice-areas.html" class="active">Practice Areas</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="practice-areas-page">
+            <div class="container">
+                <h1>Our Practice Areas</h1>
+                <p>At Johnson & Associates, we offer comprehensive legal services across various practice areas. Our experienced attorneys are dedicated to providing expert representation and achieving the best possible outcomes for our clients.</p>
+                
+                <div class="practice-area">
+                    <div class="practice-area-content">
+                        <h2><i class="fas fa-balance-scale"></i> Family Law</h2>
+                        <p>Our family law practice is dedicated to helping clients navigate complex family matters with compassion and expertise. We understand the emotional and legal challenges involved in family disputes and work tirelessly to protect your interests.</p>
+                        <ul class="practice-area-list">
+                            <li>Divorce and Legal Separation</li>
+                            <li>Child Custody and Support</li>
+                            <li>Spousal Support/Alimony</li>
+                            <li>Property Division</li>
+                            <li>Adoption and Guardianship</li>
+                            <li>Prenuptial and Postnuptial Agreements</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="practice-area">
+                    <div class="practice-area-content">
+                        <h2><i class="fas fa-briefcase"></i> Corporate Law</h2>
+                        <p>Our corporate law team provides comprehensive legal solutions to businesses of all sizes. We help our clients navigate complex business transactions and regulatory requirements while protecting their interests.</p>
+                        <ul class="practice-area-list">
+                            <li>Business Formation and Structure</li>
+                            <li>Contract Drafting and Review</li>
+                            <li>Mergers and Acquisitions</li>
+                            <li>Corporate Governance</li>
+                            <li>Business Litigation</li>
+                            <li>Regulatory Compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="practice-area">
+                    <div class="practice-area-content">
+                        <h2><i class="fas fa-gavel"></i> Criminal Defense</h2>
+                        <p>Our criminal defense attorneys are committed to protecting your rights and freedom. We provide aggressive representation and develop strategic defense plans tailored to your specific case.</p>
+                        <ul class="practice-area-list">
+                            <li>Felony and Misdemeanor Defense</li>
+                            <li>DUI/DWI Defense</li>
+                            <li>White Collar Crime</li>
+                            <li>Drug Offenses</li>
+                            <li>Violent Crime Defense</li>
+                            <li>Appeals</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="practice-area">
+                    <div class="practice-area-content">
+                        <h2><i class="fas fa-home"></i> Real Estate Law</h2>
+                        <p>Our real estate practice handles all aspects of real estate transactions and disputes. We represent buyers, sellers, landlords, and tenants in various real estate matters.</p>
+                        <ul class="practice-area-list">
+                            <li>Residential and Commercial Transactions</li>
+                            <li>Property Disputes</li>
+                            <li>Landlord-Tenant Law</li>
+                            <li>Real Estate Development</li>
+                            <li>Title Issues</li>
+                            <li>Zoning and Land Use</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="cta-box">
+                    <h2>Need Legal Assistance?</h2>
+                    <p>Our experienced attorneys are ready to help you with your legal matters. Contact us today for a consultation.</p>
+                    <a href="contact.html" class="cta-button">Schedule a Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>123 Legal Street</p>
+                    <p>New York, NY 10001</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@johnsonlegal.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="practice-areas.html">Practice Areas</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Johnson & Associates Legal Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
